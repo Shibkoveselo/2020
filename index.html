@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Вакансия: Junior Frontend Developer</h1>
     <div><img src="image/face.jpg" width="131" height="153" alt="голова" 
-    align="left" vspace="5" hspace="5"></div>
-    <div>Имя: Виктория</div>
+    vspace="5" hspace="5"></div>
+   <div class="myself">
+    <div><b>Имя:</b> Виктория</div>
     <div><a href="https://github.com/Shibkoveselo/2020" target="_blank"> github </a></div>
-    <div>Опыт работы: нет</div>
+    <div><b>Опыт работы:</b> нет</div>
+</div>
 <br>
 <br>
 <br>
@@ -19,23 +22,28 @@
 <br>
 <br>
 <br>
-<div>Дата собеседования: <input type="date"></div>
+<br>
+<div><b>Дата собеседования: <input type="date"></b></div>
 <p><b>Уровень английского:</b><br>
-     <input type="radio"name="level" value="1">Плохо
-     <input type="radio"name="level" value="2">Средне
-     <input type="radio"name="level" value="3">Хорошо
-     <input type="radio"name="level" value="4">Превосходно
+<label><input type="radio"name="level">Плохо
+</label>
+<label><input type="radio"name="level">Средне
+</label>
+<label><input type="radio"name="level">Хорошо
+</label>
+<label><input type="radio"name="level">Превосходно
+</label>
 </p>
 <p><b>Ключевые навыки:</b>
     <ul>
         <li>HTML</li>
         <li>CSS/LESS</li>
         <li>JavaScript</li>
-        <input type="text" required placeholder="Введите навык"><form><button>Добавить в список</button></form>
-        </ul> 
+    </ul> 
+  <input type="text"required placeholder="Введите навык"><button>Добавить в список</button></form>
     </p>
        <form action="formdata" method="post" name="form1">
-        <p>Коммуникабельность: <select name="list1" required>
+        <p><b>Коммуникабельность:</b> <select name="list1" required>
          <option>Выберите значение</option>
          <option>Отлично</option>
          <option>Средне</option>
@@ -43,13 +51,14 @@
         </select>
        </form>
     </p>
-       <p>Желаемая з/п: <input type="text"></p>
-       <p>Подходит по критериям:</p>
-       <span><input type="checkbox"name="level" value="5">Знание английского
-       <input type="checkbox"name="level" value="6">Оклад
-       <input type="checkbox"name="level" value="7">Навыки
-       <input type="checkbox"name="level" value="8">Сразу видно, что свой человек</span><br>
-<table border="1">
+       <p><b>Желаемая з/п:</b><input type="number"></p>
+       <p><b> Подходит по критериям:</b></p>
+        <span><label class="pretty-checkbox"><input type="checkbox"><span>Знание английского</span></label>
+        <label class="pretty-checkbox"><input type="checkbox"><span>Оклад</span></label>
+        <label class="pretty-checkbox"><input type="checkbox"><span>Навыки</span></label>
+        <label class="pretty-checkbox"><input type="checkbox"><span>Сразу видно, что свой человек</span></label>
+    </span><br>
+<table>
     <tr>
     <th>#</th>
     <th>Сроки обучения</th>
@@ -57,8 +66,8 @@
 </tr>
 <tr>
 <td>1</td>
-<td>...</td>
-<td>...</td>
+<td>5 лет</td>
+<td>Церковно-приходская школа</td>
 </tr>
 <tr>
     <td>2</td>
@@ -71,5 +80,6 @@
         <td>...</td>
         </tr>
 </table>
+<br>
 </body>
 </html>

@@ -1,0 +1,104 @@
+body{
+    margin: 8px;
+}
+
+h1{ 
+    color: rgb(10, 92, 85);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+img {
+    display: inline-block;
+    float: left;
+}
+.myself {
+    display: inline-block;
+}
+
+b{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+
+button {
+    border: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 6px 24px;
+    display: inline-block;
+    margin: 5px 10px;
+    outline: none;
+    position: relative;
+    background: rgb(10, 92, 85);
+    color: #fff;
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+button:hover {
+    background: rgb(16, 158, 146);
+}
+
+button:active {
+    background: rgb(16, 158, 146);
+    top: 2px;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    border-color: white;
+    background-color:rgb(10, 92, 85);
+    border-style: hidden;
+    border: 1px solid white;
+}
+
+th{
+text-align: center;
+padding: 8px;
+color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 12px;
+border: 1px solid white;
+}
+
+td{
+    padding: 6px;
+    font-size: 16px;
+    background-color: white;
+}
+
+label {
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]
+  {display: none;
+}
+  
+label span {
+    padding-left: 2px;
+    padding-right: 10px;
+}
+
+.pretty-checkbox > span::before {
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 8px;
+    border: 1px solid rgb(10, 92, 85);
+}
+
+label input:checked + span::before{
+  background-color: rgb(10, 92, 85);
+}
+
